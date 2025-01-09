@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Leônidas Studio - Criação de sites profissionais e personalizados.">
+    <title>Leônidas Studio - Criação de Sites</title>
+    <style>
+        /* Estilo CSS */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f4fc; /* Roxo claro */
+            color: #4b0082; /* Roxo escuro */
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        body.dark-mode {
+            background-color: #1e1e1e; /* Fundo escuro */
+            color: #ffffff; /* Texto claro */
+        }
+
+        header {
+            background-color: #4b0082; /* Roxo escuro */
+            color: #ffffff; /* Branco */
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 4px solid #d4af37; /* Dourado */
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-family: 'Georgia', serif;
+        }
+
+        header p {
+            font-size: 1.1em;
+            margin-top: 10px;
+        }
+
+        .theme-toggle {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: none;
+            border: 2px solid #ffffff;
+            border-radius: 50%;
+            padding: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .theme-toggle:hover {
+            background: #ffffff;
+            color: #4b0082;
+            transform: scale(1.1);
+        }
+
+        nav {
+            background-color: #ffffff;
+            padding: 10px 20px;
+            text-align: center;
+            border-bottom: 4px solid #4b0082;
+        }
+
+        nav a {
+            color: #4b0082;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 1em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #d4af37;
+        }
+
+        body.dark-mode nav {
+            background-color: #2b2b2b;
+        }
+
+        .banner {
+            background: url('https://via.placeholder.com/1200x400?text=Leônidas+Studio+-+Exclusividade+e+Inovação') no-repeat center center/cover;
+            height: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .banner h2 {
+            font-size: 2.2em;
+            text-shadow: 1px 1px 3px #4b0082;
+        }
+
+        .services {
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .example {
+            margin: 20px auto;
+            max-width: 90%;
+            border: 2px solid #d4af37;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .example img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .about {
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .about ul {
+            list-style-type: disc;
+            margin: 10px 0 20px;
+            padding-left: 40px;
+            text-align: left;
+        }
+
+        .about li {
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #4b0082;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        body.dark-mode footer {
+            background-color: #2b2b2b;
+        }
+
+        footer a {
+            color: #d4af37;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Leônidas Studio</h1>
+    <p>Transformando ideias em realidades digitais exclusivas.</p>
+    <button class="theme-toggle" id="theme-toggle" title="Alterar tema">☀️</button>
+</header>
+<nav>
+    <a href="#services">Serviços</a>
+    <a href="#about">Sobre Nós</a>
+    <a href="#contact">Contato</a>
+</nav>
+<div class="banner">
+    <h2>Exclusividade e Inovação para o Seu Negócio</h2>
+</div>
+<section class="services" id="services">
+    <h2>Modelo de Loja Virtual</h2>
+    <div class="example">
+        <img src="https://i.postimg.cc/JsKBNLPM/image.png" alt="Modelo de Loja Virtual">
+    </div>
+</section>
+<section class="about" id="about">
+    <h2>Sobre Nós</h2>
+    <p>
+        No <strong>Leônidas Studio</strong>, nossa missão é transformar ideias em soluções digitais exclusivas, ajudando nossos clientes a alcançar o sucesso com sites inovadores e personalizados.
+    </p>
+    <p>
+        <strong>Visão:</strong> Ser referência no mercado de criação de sites, reconhecida pela qualidade, inovação e atendimento personalizado.
+    </p>
+    <p>
+        <strong>Valores:</strong>
+        <ul>
+            <li><strong>Inovação:</strong> Procuramos sempre trazer as melhores soluções tecnológicas.</li>
+            <li><strong>Compromisso:</strong> Nos dedicamos ao sucesso dos nossos clientes.</li>
+            <li><strong>Qualidade:</strong> Garantimos serviços de alto nível.</li>
+            <li><strong>Ética:</strong> Trabalhamos com transparência e responsabilidade.</li>
+        </ul>
+    </p>
+</section>
+<footer id="contact">
+    <h2>Entre em Contato</h2>
+    <p>Email: <a href="mailto:leonidasstudio2111@gmail.com">leonidasstudio2111@gmail.com</a></p>
+    <p>Telefone: <a href="tel:+5581987236863">(81) 98723-6863</a></p>
+    <p>© 2025 Leônidas Studio. Todos os direitos reservados.</p>
+</footer>
+<script>
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    themeToggle.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+        themeToggle.textContent = body.classList.contains('dark-mode') ? '🌑' : '☀️';
+    });
+</script>
+</body>
+</html>
